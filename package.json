@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/Isaac-Ewing/lab-06-get/issues"
   },
-  "homepage": "https://github.com/Isaac-Ewing/lab-06-get#readme"
+  "homepage": "https://github.com/Isaac-Ewing/lab-06-get#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jest": "^27.0.4",
+    "supertest": "^6.1.3"
+  }
 }
