@@ -7,19 +7,17 @@ const Destiny = {
     id: 'Destiny',
     avgPlayers: 73000,
     fun: false,
-    type: 'fps',
+    type: 'fps'
 }
 
-it('games responds with all games', async(done) => {
+it('games responds with all games', async () => {
     const response = await request.get('/games');
 
     expect(response.body).toEqual(games);
-    done();
 });
 
-it('games:id responds with one game', async(done) => {
+it('games:id responds with one game', async () => {
     const response = await request.get('/games/Destiny');
 
     expect(response.body).toEqual(Destiny);
-    done();
 });

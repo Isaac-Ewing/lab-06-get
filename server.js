@@ -6,7 +6,7 @@ app.get('/games', (req, res) => {
     res.json(data);
 });
 
-app.get('/game/:id', (req, res) => {
+app.get('/games/:id', (req, res) => {
     const id = 'Destiny';
     const game = data.find(game => game.id === id)
     res.json(game);
